@@ -42,6 +42,20 @@ export class QuizzComponent implements OnInit {
 
   }
 
+  public playerChoose(value: string) {
+    this.answers.push(value);
+    this.nextStep()
+  }
 
+  async nextStep(): Promise<void> {
+    this.questionIndex++;
+
+    if (this.questionMaxIndex > this.questionIndex) {
+      this.questionSelected = this.questions[this.questionIndex]
+    } else {
+      this.finished = true
+      //verificar opção ganhador
+    }
+  }
 
 }
