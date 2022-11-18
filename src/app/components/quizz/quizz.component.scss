@@ -3,8 +3,9 @@
   margin: auto;
   margin-top: 20px;
   border: 1px solid blue;
+  border-radius: 10px;
 
-  .quizz_logo {
+  .quizz__logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +62,7 @@
   }
 
   .quizz_results {
-   flex:1;
+    flex: 1;
     height: 350px;
     background-color: #1f0539;
     border-radius: 10px;
